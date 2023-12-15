@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="stylesheet" href="/scripts/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Home</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Pages</h2>
+            <ul>
+                <li><a href="/race">To Race</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Car information</h2>
+            <ul>
+                KACHOWcarDetailsKACHOW
+            </ul>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+</html>

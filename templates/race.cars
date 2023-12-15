@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+</head>
+<body>
+    <header>
+        <h1>We are Racist (We like cars)</h1>
+    </header>
+
+    <main>
+        <section id="details">
+            <h2>Car details:</h2>
+            KACHOWdetailsKACHOW
+        </section>
+        <section id="race-details">
+            <h2>Race:</h2>
+            KACHOWraceDetailsKACHOW
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
