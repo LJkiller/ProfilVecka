@@ -9,7 +9,6 @@ class Methods {
     console.log('It loads properly.');
   }
 
-
   static getBody(request) {
     return new Promise(function (resolve, reject) {
       let chunks = [];
