@@ -6,7 +6,7 @@ class Methods {
   }
 
   static sendBug() {
-    console.log('It loaded properly.');
+    console.log('It loads properly.');
   }
 
 

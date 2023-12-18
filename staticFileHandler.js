@@ -19,7 +19,7 @@ exports.handleStaticFileRoute = async function (pathSegments, response) {
         return;
     }
 
-    let dotIndex = filePath.lastIndexOf('.');
+    let dotIndex = path.lastIndexOf('.');
     if (dotIndex === -1) {
         Methods.sendResponse(400, 'text/plain', '400 Bad Request', response);
         return;
