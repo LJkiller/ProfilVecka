@@ -40,13 +40,18 @@ async function handleRequest(request, response) {
                 `
         }
         template = template.replaceAll('KACHOWcarDetailsKACHOW', cars);
-
-        Methods.sendBug();
+        
         Methods.sendResponse(200, 'text/html', template, response);
         return;
     }
-
-    routeHandler.handleRoute(db, url, pathSegments, request, response);
+    
+    if (pathSegments.length > 0 
+        && pathSegments[0] === 'static' 
+        && request.method === 'GET'){
+            staticFileHandler.handleStaticFileRoute(pathSegments, response);
+            return;
+    }
+    routeHandler.handleRoute(url, pathSegments, db, request, response);
 }
 
 let app = http.createServer(handleRequest);
