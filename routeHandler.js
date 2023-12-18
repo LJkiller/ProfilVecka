@@ -2,9 +2,9 @@ let Methods = require('./methods');
 let fs = require('fs/promises');
 let raceHandler = require('./routeHandlers/raceHandler');
 
-exports.handleRoute = async function(db, url, pathSegments, request, response){
+exports.handleRoute = async function (db, url, pathSegments, request, response) {
     console.log(pathSegments);
-    
+
     let template;
     let result;
     //Index
@@ -16,26 +16,40 @@ exports.handleRoute = async function(db, url, pathSegments, request, response){
             let obj = result[i];
             cars +=
                 `
-                    <li class="car-object">
-                    ${obj.carModel}
-                        <ul>
-                            <li>Weight:      ${obj.weight}kg</li>
-                            <li>Height:      ${obj.height}m</li>
-                            <li>Width:       ${obj.width}m</li>
-                            <li>Length:      ${obj.length}m</li>
-                            <li>MaxVeclotiy: ${obj.maxVelocity}km/h</li>
-                        </ul>
-                    </li>
-                    <br>
+                <table class="car-object">
+                    <tr class="car-model">
+                        <th colspan="2">${obj.carModel}</th>
+                    </tr>
+                    <tr class="car-weight">
+                        <td>Weight:</td>
+                        <td>${obj.weight} kg</td>
+                    </tr>
+                    <tr class="car-height">
+                        <td>Height:</td>
+                        <td>${obj.height} m</td>
+                    </tr>
+                    <tr class="car-width">
+                        <td>Width:</td>
+                        <td>${obj.width} m</td>
+                    </tr>
+                    <tr class="car-length">
+                        <td>Length:</td>
+                        <td>${obj.length} m</td>
+                    </tr>
+                    <tr class="car-max-velocity">
+                        <td>Max Velocity:</td>
+                        <td>${obj.maxVeclocity} km/h</td>
+                    </tr>
+                </table>
                 `
         }
         template = template.replaceAll('KACHOWcarDetailsKACHOW', cars);
-        
+
         Methods.sendResponse(200, 'text/html', template, response);
         return;
     }
-    else{
-        switch(pathSegments[0]){
+    else {
+        switch (pathSegments[0]) {
             case 'race':
                 raceHandler.handleRaceRoute(db, url, pathSegments, request, response);
                 break;
