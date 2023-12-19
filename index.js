@@ -10,7 +10,7 @@ let staticFileHandler = require('./staticFileHandler');
 async function handleRequest(request, response){
 
     let mongoConn = await MongoClient.connect(process.env.MONGODB_CONNECTIONSTRING);
-    let db = mongoConn.db('ProfilVecka');
+    let db = mongoConn.db('carRace');
 
     let url = new URL(request.url, 'http://' + request.headers.host);
     let path = url.pathname;

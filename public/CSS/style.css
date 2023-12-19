@@ -9,6 +9,7 @@
   --normal-border-rad: 10px;
 
   /*Text*/
+  --bigger-font-size: 22px;
   --normal-font-size: 18px;
 
   /*Transition*/
@@ -130,7 +131,7 @@ main section p {
 /*Specific style*/
 main section#races a {
   transition: var(--normal-transition);
-  font-size: var(--normal-font-size);
+  font-size: var(--bigger-font-size);
   text-decoration: none;
   color: var(--primary-color);
 }
