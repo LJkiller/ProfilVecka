@@ -1,39 +1,37 @@
 :root {
+  /*Colors*/
   --primary-color: #333;
-
+  --primary-background-color: #f4f4f4;
   --highlight-color: rgba(0, 128, 255, 1);
+  --table-highlight-color: rgba(210, 210, 210, 1);
 
+  /*Element properties*/
   --normal-border-rad: 10px;
 
+  /*Text*/
   --normal-font-size: 18px;
 
+  /*Transition*/
   --normal-transition: 0.2s ease-in-out;
 }
 
-/* Reset default margin and padding */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-li,
+/*#region Default values */
+body, h1, h2, h3, h4,
+h5, h6, ul, li,
 p {
   margin: 0;
   padding: 0;
 }
 
-/* Basic styling for the body */
 body {
   font-family: "Arial", sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: var(--primary-background-color);
   color: var(--primary-color);
 }
+/*#endregion*/
 
-/* Header styles */
+/*#region Header styles */
 header {
   background-color: var(--primary-color);
   color: #fff;
@@ -53,18 +51,18 @@ header h1 img {
   max-width: 45vw;
 }
 
-nav ul {
+header nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
 }
 
-nav ul li {
+header nav ul li {
   position: relative;
   margin-right: 40px;
 }
 
-nav ul li a {
+header nav ul li a {
   color: #fff;
   text-decoration: none;
   font-size: var(--normal-font-size);
@@ -74,12 +72,11 @@ nav ul li a {
   transition: color 0.3s ease-in-out;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
   color: var(--highlight-color);
-  /* Change color on hover */
 }
 
-nav ul li ul {
+header nav ul li ul {
   display: none;
   position: absolute;
   background-color: var(--primary-color);
@@ -91,57 +88,59 @@ nav ul li ul {
   transition: opacity 0.3s ease-in-out;
 }
 
-nav ul li:hover ul {
+header nav ul li:hover ul {
   display: block;
   opacity: 1;
   visibility: visible;
 }
 
-nav ul li ul li {
+header nav ul li ul li {
   display: block;
   margin-right: 0;
   white-space: nowrap;
 }
 
-nav ul li ul li a {
+header nav ul li ul li a {
   padding: 10px 20px;
   font-size: 16px;
 }
+/*#endregion*/
 
-/* Main content styles */
+/*#region Main content styles */
 main {
   padding: 40px;
   text-align: center;
 }
 
-main section#races a {
-  font-size: var(--normal-font-size);
-  text-decoration: none;
-  color: var(--primary-color);
-}
-
-main section#races a:hover {
-  color: var(--highlight-color);
-  text-decoration: underline;
-}
-
-section {
+/*General style*/
+main section {
   margin-bottom: 60px;
 }
-
-section h2 {
+main section h2 {
   font-size: 36px;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 0px;
 }
-
-section p {
+main section p {
   font-size: var(--normal-font-size);
   line-height: 1.8;
 }
 
-#specs table.car-object {
+/*Specific style*/
+main section#races a {
+  transition: var(--normal-transition);
+  font-size: var(--normal-font-size);
+  text-decoration: none;
+  color: var(--primary-color);
+}
+main section#races a:hover {
+  color: var(--highlight-color);
+  text-decoration: underline;
+}
+
+
+main #specs table.car-object {
   transition: var(--normal-transition);
   display: inline-block;
   text-align: center;
@@ -150,21 +149,20 @@ section p {
   padding: 0px 20px;
   margin-right: 13px;
 }
-
-.car-object tr:hover {
+main .car-object tr:hover {
   color: var(--highlight-color);
   cursor: default;
 }
-
-.car-object tr.car-model:hover {
+main .car-object tr.car-model:hover {
   color: var(--primary-color);
 }
-
-#specs table.car-object:hover {
-  background-color: rgba(210, 210, 210, 1);
+main #specs table.car-object:hover {
+  background-color: var(--table-highlight-color);
 }
 
-/* Footer styles */
+/*#endregion*/
+
+/*#region Footer styles */
 footer {
   text-align: center;
   padding: 20px;
@@ -175,3 +173,4 @@ footer {
 footer p {
   font-size: 14px;
 }
+/*#endregion*/

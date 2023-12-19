@@ -1,73 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LBS Racing</title>
-    <link rel="stylesheet" href="/static/CSS/style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="header-content">
-        <img
-          src="https://lbs.se/wp-content/uploads/2023/04/lbs-logo-white2.gif"
-          class="site_logo"
-          alt="LBS Kreativa gymnasiet."
-          class="logo"
-        />
 
-        <div class="header-text">
-          <h1>Racing</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LBS Racing</title>
+  
+  <link rel="stylesheet" href="/static/CSS/style.css" />
+</head>
 
-          <nav>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#races">Races</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="https://lbs.se/wp-content/uploads/2023/04/lbs-logo-white2.gif" class="site_logo"
+        alt="LBS Kreativa gymnasiet." class="logo" />
+
+      <div class="header-text">
+        <h1>Racing</h1>
+
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#races">Races</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section id="home">
-        <h2>Welcome to LBS Racing</h2>
-        <p>Experience the weight of speed and glory.</p>
-        <!-- Add more content or images here -->
-      </section>
+  <main>
+    <section id="home">
+      <h2>Welcome to LBS Racing</h2>
+      <p>Experience the weight of speed and glory.</p>
+      <!-- Add more content or images here -->
+    </section>
 
-      <section id="races">
-        <h2>Races</h2>
-        <a href="/race">To races</a>
-        <p>Check out our exciting racing events.</p>
-        <!-- Add event details or schedule here -->
-      </section>
+    <section id="races">
+      <h2>Races</h2>
+      <a href="/race">To races</a>
+      <p>Check out our exciting racing events.</p>
+      <!-- Add event details or schedule here -->
+    </section>
 
-      <section id="about">
-        <h2>About Us</h2>
-        <p>Learn about our passion for racing and our mission.</p>
-        <!-- Add more content here -->
-      </section>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Learn about our passion for racing and our mission.</p>
+      <!-- Add more content here -->
+    </section>
 
-     
 
-      <section id="specs">
-        <h2>Car Specifications</h2>
-        <p>These are our car specs:</p>
-        KACHOWcarDetailsKACHOW
-      </section>
 
-      <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Get in touch with us for inquiries or collaborations.</p>
-        <!-- Add contact form or contact information here -->
-      </section>
-    </main>
+    <section id="specs">
+      <h2>Car Specifications</h2>
+      <p>These are our car specs:</p>
+      KACHOWcarDetailsKACHOW
+    </section>
 
-    <footer>
-      <p>&copy; 2023 Racing World</p>
-    </footer>
-  </body>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Get in touch with us for inquiries or collaborations.</p>
+      <!-- Add contact form or contact information here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Racing World</p>
+  </footer>
+</body>
+
 </html>
